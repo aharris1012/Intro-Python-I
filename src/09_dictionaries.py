@@ -46,7 +46,12 @@ print(waypoints)
 # waypoints list.
 
 # YOUR CODE HERE
-print("name" + waypoints["name"])
+waypoints [0]["name"] = "not a real place"
+waypoints[0]["lon"]= -130
+print (waypoints)
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+for waypoint in waypoints:
+    for key in waypoint:
+        print(f"{key}: {waypoint[key]}")
